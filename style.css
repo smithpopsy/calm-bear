@@ -1,0 +1,505 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&family=Righteous&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --orangebackgroundcolor: #f97f0f;
+  --darkgraybackgroundcolor: #08748c;
+  --backgroundcolor: #08748c4d;
+}
+header {
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  width: 100%;
+  /* border: 2px solid yellow; */
+  background-color: var(--darkgraybackgroundcolor);
+}
+
+#anchor-nav {
+  text-decoration: none;
+  color: white;
+}
+
+.anchor-nav {
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  margin-right: 250px;
+}
+
+.button-navs {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.button-nav {
+  border: none;
+  background-color: var(--orangebackgroundcolor);
+  color: white;
+  border-radius: 6px;
+  height: 40px;
+  width: 170px;
+}
+
+#button2-nav {
+  width: 120px;
+  background-color: transparent;
+  color: var(--orangebackgroundcolor);
+  border: 1px solid var(--orangebackgroundcolor);
+}
+
+#list-desktop {
+  display: flex;
+  justify-content: space-around;
+  display: none;
+}
+
+.hamburger {
+  /* border: 2px solid red; */
+  /* width: 90px; */
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger div {
+  height: 5px;
+  background-color: white;
+  width: 40px;
+  border-radius: 5px;
+}
+
+@media (min-width: 800px) {
+  #list-desktop {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+/* hero section */
+
+.hero-sec {
+  /* border: 2px solid green; */
+  background-color: var(--backgroundcolor);
+  height: 350px;
+  /* padding-top: 20px; */
+}
+
+.hero-texts {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-h1 {
+  text-transform: capitalize;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+}
+
+.hero-p {
+  font-family: "Reddit Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.hero-btn1 {
+  border: none;
+  background-color: var(--orangebackgroundcolor);
+  color: white;
+  border-radius: 6px;
+  height: 40px;
+  width: 220px;
+}
+
+.hero-btn2 {
+  width: 220px;
+  background-color: transparent;
+  color: var(--orangebackgroundcolor);
+  border: 1px solid var(--orangebackgroundcolor);
+  border-radius: 6px;
+  height: 40px;
+  margin-top: 25px;
+}
+
+.hero.btns {
+}
+
+@media (min-width: 768px) {
+  .hero-sec {
+    height: 720px;
+  }
+
+  .hero-texts {
+    width: 530px;
+  }
+  .hero-h1 {
+    font-size: 65px;
+  }
+  .hero-btn1 {
+    width: 240px;
+  }
+  .hero-btn2 {
+    width: 240px;
+    margin-left: 20px;
+  }
+
+  .hero-p {
+    font-size: 20px;
+  }
+}
+
+/* sessions */
+.sessions {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fcbb80;
+  border-radius: 15px;
+  height: 120px;
+  margin-top: -50px;
+  display: none;
+}
+
+.sessions h2 {
+  font-family: "Righteous", sans-serif;
+  font-size: 41px;
+  font-weight: 400;
+}
+
+.sessions p {
+  font-family: "Reddit Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .sessions {
+    display: flex;
+  }
+}
+
+/* about */
+.about {
+  height: 300px;
+  background-image: url(./assets/bg-image-about.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+
+.about a {
+  text-decoration: none;
+  background-color: #f97f0f;
+  color: white;
+  border-radius: 6px;
+  padding: 6px 8px;
+  width: 120px;
+  text-align: center;
+}
+
+.about-writings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .about {
+    height: 400px;
+  }
+
+  .about h2 {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+  }
+
+  .about p {
+    font-family: "Reddit Sans Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+/* what we offer */
+
+.what-we-offer {
+  height: 460px;
+  background-color: #b5d5dd;
+}
+
+.offer-writings {
+  /* text-align: center; */
+  margin: 0 auto;
+}
+
+.offer-writings h2 {
+  padding-top: 20px;
+  font-family: "Righteous", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.offer-writings h5 {
+  font-family: "Reddit Sans Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .what-we-offer {
+    height: 500px;
+  }
+  .offer-writings h2 {
+    font-size: 48px;
+  }
+
+  .offer-img {
+    width: 638px;
+    height: 500px;
+  }
+  .offer-writings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* how to start  */
+
+.how-to-start {
+  text-align: center;
+  height: 400px;
+}
+
+.how-to-start h2 {
+  font-family: "Righteous", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  padding-top: 40px;
+}
+
+.how-to-start p {
+  font-family: "Reddit Sans Condensed", sans-serif;
+  font-weight: 400;
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .how-to-start {
+    height: 500px;
+  }
+}
+
+/* why choose */
+
+.ease {
+  height: 270px;
+  width: 292.55px;
+  background-color: #cfd0ed;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.flexible {
+  height: 270px;
+  width: 292.55px;
+  background-color: #bfe6dd;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.personalized {
+  height: 270px;
+  width: 292.55px;
+  background-color: #bfe6dd;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.pricing {
+  height: 270px;
+  width: 292.55px;
+  background-color: #cfd0ed;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.why-choose {
+  /* border: 2px solid black; */
+}
+
+.why-choose-writings {
+  /* border: 2px solid green; */
+  padding: 20px;
+  text-align: center;
+}
+
+.why-choose-writings h2 {
+  font-family: "Righteous", sans-serif;
+  font-size: 58px;
+  font-weight: 400;
+}
+
+.why-choose-writings p {
+  font-family: "Reddit Sans Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.boxes h2 {
+  font-family: "Righteous", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.boxes p {
+  font-family: "Reddit Sans Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .why-choose-writings {
+    padding-top: 160px;
+  }
+
+  .boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-why {
+    width: 200px;
+  }
+}
+
+/*  customer says */
+.says-writings {
+}
+
+.barry {
+  /* height: 356px; */
+  width: 264px;
+  background-color: #f6fdff;
+  border-radius: 15px;
+  margin: 0 auto;
+  box-shadow: 0px 2px 4px 0px #00000040;
+}
+
+.yuji {
+  width: 264px;
+  background-color: #f6fdff;
+  border-radius: 15px;
+  margin: 0 auto;
+  box-shadow: 0px 2px 4px 0px #00000040;
+}
+
+.saru {
+  /* height: 356px; */
+  width: 264px;
+  background-color: #f6fdff;
+  border-radius: 15px;
+  margin: 0 auto;
+  box-shadow: 0px 2px 4px 0px #00000040;
+}
+
+/* .names{
+  border: 2px solid green;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+} */
+
+/* footer */
+
+
+.first-foot {
+  width: 420px;
+  height: 273px;
+}
+
+input {
+  width: 420px;
+  height: 59px;
+  border-radius: 8px;
+  border: none;
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-family: "Reddit Sans Condensed", sans-serif;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.first-foot a {
+  text-decoration: none;
+  background-color: #f97f0f;
+  color: white;
+  border-radius: 6px;
+  padding: 10px 8px;
+  width: 120px;
+  text-align: center;
+  position: relative;
+  margin-left: 320px;
+  bottom: 40px;
+}
+
+.second-foot {
+  /* border: 2px solid red; */
+  width: 124px;
+  height: 188px;
+  padding-top: 80px;
+}
+
+.second-foot p{
+  margin-left: 30px;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+.third-foot {
+  width: 132px;
+  height: 188px;
+  padding-top: 80px;
+}
+
+
+@media (min-width: 768px){
+  .foot {
+    padding-top: 20px;
+    display: flex;
+    
+  }
+}
